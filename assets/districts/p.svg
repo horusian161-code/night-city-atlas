@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Новый Уэстбрук">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#d7b877" stop-opacity=".32"/><stop offset="1" stop-color="#d7b877" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#d7b877" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#d7b877" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#d7b877" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M0 292V200h58V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="4" y="208" width="50" height="83" fill="url(#windows)" opacity="0.45"/>
+<path d="M72 292V237h59V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="76" y="245" width="51" height="46" fill="url(#windows)" opacity="0.52"/>
+<path d="M132 292V186h56V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="136" y="194" width="48" height="97" fill="url(#windows)" opacity="0.52"/>
+<path d="M222 292V228h59V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="226" y="236" width="51" height="55" fill="url(#windows)" opacity="0.55"/>
+<path d="M222 228h59" stroke="#d7b877" opacity=".85" stroke-width="2"/>
+<path d="M304 292V209h43V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="308" y="217" width="35" height="74" fill="url(#windows)" opacity="0.69"/>
+<path d="M373 292V166h52V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="377" y="174" width="44" height="117" fill="url(#windows)" opacity="0.37"/>
+<path d="M458 292V204h46V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="462" y="212" width="38" height="79" fill="url(#windows)" opacity="0.40"/>
+<path d="M458 204h46" stroke="#d7b877" opacity=".85" stroke-width="2"/>
+<path d="M524 292V185h41V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="528" y="193" width="33" height="98" fill="url(#windows)" opacity="0.57"/>
+<path d="M609 292V170h35V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="613" y="178" width="27" height="113" fill="url(#windows)" opacity="0.48"/>
+<path d="M666 292V203h47V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="670" y="211" width="39" height="80" fill="url(#windows)" opacity="0.36"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#d7b877" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<path d="M276 306V113l30-25h91l28 25v193Z" fill="#101d2a" stroke="#456273"/><path d="M289 119h122M289 139h122M289 158h122M289 177h122M289 197h122M289 216h122M289 235h122M289 254h122" stroke="#d7b877" opacity=".5" stroke-width="3"/><path d="M306 88V64h91v24M352 64V33" fill="none" stroke="#577082" stroke-width="4"/>
+<rect x="31" y="161" width="195" height="83" fill="#09151e" stroke="#748bb0"/><rect x="43" y="173" width="171" height="59" fill="#38394f"/><text x="57" y="198" fill="#d7b877" font-size="15" letter-spacing="2" font-family="sans-serif">NETWORK 54</text><text x="61" y="222" fill="#e4d0c4" font-size="11" font-family="sans-serif">ON AIR // 2045</text>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#d7b877"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">NEW WESTBROOK</text>
+<text x="58" y="81" fill="#d7b877" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR P // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

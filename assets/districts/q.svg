@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Чартер-Хилл">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#d7b877" stop-opacity=".32"/><stop offset="1" stop-color="#d7b877" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#d7b877" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#d7b877" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#d7b877" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M-7 292V201h55V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="-3" y="209" width="47" height="82" fill="url(#windows)" opacity="0.49"/>
+<path d="M67 292V158h37V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="71" y="166" width="29" height="125" fill="url(#windows)" opacity="0.68"/>
+<path d="M155 292V143h48V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="159" y="151" width="40" height="140" fill="url(#windows)" opacity="0.63"/>
+<path d="M222 292V228h41V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="226" y="236" width="33" height="55" fill="url(#windows)" opacity="0.46"/>
+<path d="M222 228h41" stroke="#d7b877" opacity=".85" stroke-width="2"/>
+<path d="M288 292V203h42V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="292" y="211" width="34" height="80" fill="url(#windows)" opacity="0.65"/>
+<path d="M381 292V230h35V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="385" y="238" width="27" height="53" fill="url(#windows)" opacity="0.47"/>
+<path d="M439 292V198h61V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="443" y="206" width="53" height="85" fill="url(#windows)" opacity="0.38"/>
+<path d="M439 198h61" stroke="#d7b877" opacity=".85" stroke-width="2"/>
+<path d="M513 292V159h44V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="517" y="167" width="36" height="124" fill="url(#windows)" opacity="0.64"/>
+<path d="M598 292V233h45V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="602" y="241" width="37" height="50" fill="url(#windows)" opacity="0.56"/>
+<path d="M669 292V159h62V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="673" y="167" width="54" height="124" fill="url(#windows)" opacity="0.50"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#d7b877" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<path d="M0 320Q162 275 334 305T720 305V400H0Z" fill="#102829"/><path d="M161 319V265l47-36 94 17v71Z" fill="#2b3742" stroke="#65818d"/><path d="M148 263l60-42 102 20v15l-100-15-49 33Z" fill="#4f5864"/><rect x="179" y="270" width="51" height="28" fill="#b7a780" opacity=".7"/><path d="M388 321V247l91-13 78 30v53Z" fill="#202f3b" stroke="#597a89"/><rect x="425" y="261" width="93" height="23" fill="#b9a58b" opacity=".45"/>
+<path d="M30 325V301m30 25v-27m30 29v-26m30 29v-26M0 310q195-29 330 11t390-15" fill="none" stroke="#d7b877" opacity=".6" stroke-width="3"/>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#d7b877"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">CHARTER HILL</text>
+<text x="58" y="81" fill="#d7b877" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR Q // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

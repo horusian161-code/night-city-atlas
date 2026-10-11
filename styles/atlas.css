@@ -1,0 +1,380 @@
+.nca-app {
+  --nca-bg: #0b1016;
+  --nca-panel: #111820;
+  --nca-panel-raised: #17202a;
+  --nca-line: #26313d;
+  --nca-text: #e0e5eb;
+  --nca-muted: #82909e;
+  --nca-amber: #edb96e;
+  --nca-cyan: #75bfcc;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  color: var(--nca-text);
+  background: var(--nca-bg);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color-scheme: dark;
+  isolation: isolate;
+  container-type: inline-size;
+  container-name: nca;
+}
+.nca-app *, .nca-app *::before, .nca-app *::after { box-sizing: border-box; }
+.nca-app [hidden] { display: none !important; }
+.nca-app button, .nca-app input, .nca-app select { font: inherit; }
+.nca-app button { width: auto; margin: 0; border: 0; border-radius: 0; color: inherit; line-height: inherit; box-shadow: none; background: none; cursor: pointer; text-transform: none; }
+.nca-app button:hover, .nca-app button:focus { box-shadow: none; }
+.nca-app h2, .nca-app h3, .nca-app h4, .nca-app p { margin: 0; border: 0; }
+.nca-app a { color: var(--nca-cyan); text-decoration: none; }
+.nca-app a:hover { text-decoration: underline; }
+.nca-app button:focus-visible, .nca-app input:focus-visible, .nca-app select:focus-visible, .nca-app a:focus-visible { outline: 2px solid var(--nca-amber); outline-offset: 3px; }
+.nca-app ::selection { color: #0b1016; background: var(--nca-amber); }
+.nca-app ::-webkit-scrollbar { width: 5px; height: 5px; }
+.nca-app ::-webkit-scrollbar-track { background: transparent; }
+.nca-app ::-webkit-scrollbar-thumb { background: #3d4d5c; border-radius: 4px; }
+.nca-app .nca-icon { display: block; flex-shrink: 0; width: 16px; height: 16px; }
+.nca-shell { position: relative; width: 100%; height: 100%; min-height: 0; overflow: hidden; display: flex; flex-direction: column; background: var(--nca-bg); }
+.nca-app .nca-header { display: flex; align-items: center; gap: 28px; flex-shrink: 0; height: 78px; padding: 0 24px; border-bottom: 1px solid var(--nca-line); background: linear-gradient(110deg, #171d25, #10161e 60%); }
+.nca-app .nca-brand { display: flex; gap: 13px; align-items: center; }
+.nca-app .nca-brand-mark { position: relative; display: flex; align-items: center; justify-content: center; height: 37px; width: 40px; border: 1px solid var(--nca-amber); border-right-width: 3px; color: var(--nca-amber); font-size: 15px; font-weight: 800; line-height: 1; letter-spacing: -2px; transform: skewY(-5deg); }
+.nca-app .nca-brand-mark span { display: inline; margin-left: 1px; }
+.nca-app .nca-brand-mark::after { content: ""; position: absolute; bottom: -4px; left: 5px; width: 12px; border-bottom: 2px solid var(--nca-bg); }
+.nca-app .nca-brand-title { font-size: 23px; font-weight: 750; line-height: 1.2; letter-spacing: 2px; }
+.nca-app .nca-brand-slash { color: var(--nca-amber); }
+.nca-app .nca-brand-subtitle { margin-top: 4px; font: 8px/1.3 "SFMono-Regular", Consolas, monospace; letter-spacing: 1.3px; color: var(--nca-muted); }
+.nca-app .nca-era { display: flex; align-items: center; gap: 9px; border-left: 1px solid var(--nca-line); padding-left: 25px; font: 9px/1 Consolas, monospace; letter-spacing: 1px; color: #95a3af; }
+.nca-app .nca-era strong { margin-left: 5px; color: var(--nca-amber); font-size: 23px; letter-spacing: 0; }
+.nca-app .nca-live-dot { display: inline-block; flex-shrink: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--nca-amber); box-shadow: 0 0 10px #edb96e22; }
+.nca-app .nca-header-actions { display: flex; align-items: center; margin-left: auto; gap: 8px; }
+.nca-app .nca-gm-badge { color: var(--nca-muted); font: 10px Consolas, monospace; letter-spacing: 1px; margin-right: 7px; }
+.nca-app .nca-reader-label { color: var(--nca-muted); font: 9px Consolas, monospace; letter-spacing: 2px; }
+.nca-app .nca-icon-button { padding: 9px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--nca-line); background: #111821; border-radius: 4px; color: var(--nca-muted); }
+.nca-app .nca-icon-button:hover { background: #202b37; color: var(--nca-text); border-color: #465467; }
+.nca-app .nca-primary { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--nca-amber); color: #171714; padding: 9px 13px; border-radius: 4px; font-weight: 700; font-size: 11px; min-height: 35px; }
+.nca-app .nca-primary:hover { background: #ffd195; }
+.nca-app .nca-primary.is-active { background: #fff0d7; }
+.nca-app .nca-secondary { display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #354351; background: #18222c; color: #cad4df; padding: 9px 12px; border-radius: 4px; font-size: 11px; }
+.nca-app .nca-secondary:hover { background: #24303c; border-color: #657281; }
+.nca-app .nca-workspace { display: grid; grid-template-columns: 252px minmax(200px, 1fr) 298px; flex: 1; min-height: 0; }
+.nca-app .nca-rail { display: flex; flex-direction: column; min-height: 0; background: #111820; border-right: 1px solid var(--nca-line); }
+.nca-app .nca-rail-top { padding: 22px 17px 15px; flex-shrink: 0; }
+.nca-app .nca-section-heading { display: flex; align-items: center; justify-content: space-between; color: #aab7c3; font: 9px/1.2 Consolas, monospace; letter-spacing: 1.4px; }
+.nca-app .nca-index-total { color: var(--nca-amber); background: #edb96e12; border: 1px solid #edb96e2b; padding: 3px 5px; letter-spacing: 0; border-radius: 3px; }
+.nca-app .nca-search-wrap { display: flex; gap: 9px; align-items: center; margin-top: 16px; background: #0c1219; border: 1px solid #34414e; border-radius: 4px; padding: 0 11px; color: var(--nca-muted); }
+.nca-app .nca-search-wrap:focus-within { border-color: var(--nca-amber); }
+.nca-app .nca-search { height: 36px; width: 100%; color: var(--nca-text); background: transparent; border: 0; margin: 0; padding: 0; box-shadow: none; font-size: 11px; }
+.nca-app .nca-search:focus, .nca-app .nca-search:focus-visible { outline: none; box-shadow: none; }
+.nca-app .nca-search::placeholder { color: #738291; opacity: 1; }
+.nca-app .nca-district-filter { display: flex; align-items: center; gap: 9px; margin-top: 12px; }
+.nca-app .nca-district-filter label { color: #8c9aa8; font-size: 10px; }
+.nca-app .nca-district-filter select { flex: 1; min-width: 0; height: 31px; padding: 3px 7px; border: 1px solid #2c3946; border-radius: 4px; background: #18212b; color: #c7d0d9; font-size: 10px; }
+.nca-app .nca-filter-heading { display: flex; justify-content: space-between; align-items: center; margin-top: 21px; margin-bottom: 9px; font: 8px/1.2 Consolas, monospace; color: var(--nca-muted); letter-spacing: 1.5px; }
+.nca-app .nca-clear { color: #a5adb6; font-size: 9px; font-family: "Segoe UI", Arial, sans-serif; letter-spacing: 0; padding: 2px 0; }
+.nca-app .nca-clear:hover { color: var(--nca-amber); }
+.nca-app .nca-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.nca-app .nca-category { display: flex; align-items: center; gap: 7px; min-height: 30px; padding: 6px 7px; text-align: left; border: 1px solid #2a3542; background: #151e28; border-radius: 3px; font-size: 9px; color: #9babb9; }
+.nca-app .nca-category:first-child { grid-column: 1 / -1; }
+.nca-app .nca-category .nca-icon { width: 12px; height: 12px; color: var(--category-color, var(--nca-amber)); opacity: .8; }
+.nca-app .nca-category:hover { background: #202b37; border-color: #4b5c6c; }
+.nca-app .nca-category.is-active { background: #edb96e13; border-color: #b88e52; color: #edc791; }
+.nca-app .nca-category.is-active .nca-icon { opacity: 1; }
+.nca-app .nca-results-heading { display: flex; justify-content: space-between; padding: 13px 17px; border-top: 1px solid #27313c; border-bottom: 1px solid #27313c; font: 8px/1.2 Consolas, monospace; letter-spacing: 1.2px; color: #8495a6; }
+.nca-app .nca-results-count { letter-spacing: .3px; }
+.nca-app .nca-location-list { min-height: 0; overflow: auto; flex: 1; padding: 4px 9px; }
+.nca-app .nca-location-row { display: flex; gap: 9px; width: 100%; text-align: left; align-items: center; padding: 12px 8px; border-bottom: 1px solid #26303a80; border-left: 2px solid transparent; transition: background .15s; }
+.nca-app .nca-location-row:hover { background: #1c2631; }
+.nca-app .nca-location-row.is-selected { border-left-color: var(--nca-amber); background: #edb96e0e; }
+.nca-app .nca-location-icon { display: grid; place-items: center; width: 26px; height: 28px; flex-shrink: 0; background: #0d141b; border: 1px solid #303b48; border-radius: 4px; }
+.nca-app .nca-location-icon .nca-icon { width: 13px; height: 13px; }
+.nca-app .nca-location-copy { display: block; min-width: 0; flex: 1; }
+.nca-app .nca-location-copy strong { display: block; font-size: 10px; font-weight: 600; line-height: 1.45; color: #d3dce4; overflow-wrap: anywhere; }
+.nca-app .nca-location-copy small { display: block; margin-top: 3px; color: #8795a3; font-size: 9px; }
+.nca-app .nca-location-number { color: #687887; font: 8px Consolas, monospace; }
+.nca-app .nca-location-number .nca-icon { width: 13px; height: 13px; color: var(--nca-amber); }
+.nca-app .nca-rail-footer { flex-shrink: 0; display: flex; align-items: center; gap: 7px; padding: 13px 17px; border-top: 1px solid var(--nca-line); color: #687a8a; font: 7px/1.2 Consolas, monospace; letter-spacing: .8px; }
+.nca-app .nca-rail-footer .nca-live-dot { background: #69a8b4; width: 4px; height: 4px; }
+.nca-app .nca-empty { text-align: center; padding: 42px 16px; color: var(--nca-muted); }
+.nca-app .nca-empty .nca-icon { width: 27px; height: 27px; margin: 0 auto 14px; color: #506578; }
+.nca-app .nca-empty strong { display: block; color: #b6c1cc; font-size: 12px; margin-bottom: 5px; }
+.nca-app .nca-empty p { font-size: 10px; line-height: 1.6; }
+.nca-app .nca-map-panel { display: flex; flex-direction: column; min-height: 0; min-width: 0; background: #0c131b; }
+.nca-app .nca-map-stage { position: relative; flex: 1; min-height: 0; overflow: hidden; background: radial-gradient(ellipse at 60% 50%, #15242e 0, #0b121a 75%); }
+.nca-app .nca-map-stage::after { content: ""; pointer-events: none; position: absolute; inset: 0; box-shadow: inset 0 0 75px #07101675; }
+.nca-app .nca-map { display: block; height: 100%; width: 100%; outline: none; cursor: grab; touch-action: none; user-select: none; }
+.nca-app .nca-map:focus-visible { outline: 2px solid var(--nca-amber); outline-offset: -3px; }
+.nca-app .nca-map.is-dragging { cursor: grabbing; }
+.nca-app .nca-map.is-adding, .nca-app .nca-map.is-adding * { cursor: crosshair; }
+.nca-app .nca-district-shape { fill-opacity: .16; stroke-opacity: .54; stroke-width: 2; stroke-linejoin: round; cursor: pointer; transition: fill-opacity .15s, stroke-opacity .15s; }
+.nca-app .nca-district-shape:hover, .nca-app .nca-district-shape.is-hovered { fill-opacity: .39; stroke-opacity: 1; stroke-width: 3; }
+.nca-app .nca-district-shape.is-selected { fill-opacity: .31; stroke-opacity: 1; stroke-width: 4; }
+.nca-app .nca-district-shape:focus-visible { outline: none; stroke: #fff4db; stroke-width: 5; stroke-opacity: 1; fill-opacity: .35; }
+.nca-app .nca-district-shape.is-filtered { fill-opacity: .055; stroke-opacity: .25; }
+.nca-app .nca-district-label text { font: 600 15px/1 "Segoe UI", Arial, sans-serif; letter-spacing: 2px; fill: #cfdae4; paint-order: stroke; stroke: #0c151f; stroke-width: 5px; stroke-linejoin: round; }
+.nca-app .nca-district-label .nca-district-label-en { font: 9px/1 Consolas, monospace; letter-spacing: 1.6px; fill: #8aa0b3; stroke-width: 3px; }
+.nca-app .nca-map-pin { cursor: pointer; }
+.nca-app .nca-pin-halo { fill: var(--pin-color); opacity: 0; transition: opacity .15s; }
+.nca-app .nca-pin-body { fill: #0b1420; stroke-width: 2; transition: fill .15s; }
+.nca-app .nca-map-pin:hover .nca-pin-halo, .nca-app .nca-map-pin.is-hovered .nca-pin-halo, .nca-app .nca-map-pin:focus-visible .nca-pin-halo { opacity: .22; }
+.nca-app .nca-map-pin:focus-visible { outline: none; }
+.nca-app .nca-map-pin:focus-visible .nca-pin-body { stroke: #fff3d8; stroke-width: 4; }
+.nca-app .nca-map-pin.is-selected .nca-pin-halo { opacity: .32; }
+.nca-app .nca-map-pin.is-selected .nca-pin-body { fill: #273543; stroke-width: 3; }
+.nca-app .nca-pin-label { fill: #dbe7f1; font: 11px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: #0b1420; stroke-width: 4px; stroke-linejoin: round; opacity: 0; pointer-events: none; }
+.nca-app .nca-map.is-zoomed .nca-pin-label, .nca-app .nca-map-pin.is-selected .nca-pin-label, .nca-app .nca-map-pin.is-hovered .nca-pin-label, .nca-app .nca-map-pin:focus-visible .nca-pin-label { opacity: 1; }
+.nca-app .nca-map-heading { position: absolute; top: 24px; left: 24px; pointer-events: none; z-index: 1; }
+.nca-app .nca-map-heading-kicker { color: var(--nca-amber); font: 8px Consolas, monospace; letter-spacing: 2px; }
+.nca-app .nca-map-heading-title { font-size: 25px; line-height: 1.2; font-weight: 650; margin-top: 6px; letter-spacing: 4px; color: #dce3e9; text-shadow: 0 1px 6px #0b1016; }
+.nca-app .nca-map-heading-subtitle { margin-top: 7px; color: #899eaf; font: 7px Consolas, monospace; letter-spacing: .9px; }
+.nca-app .nca-map-controls { display: flex; flex-direction: column; position: absolute; right: 17px; top: 23px; gap: 5px; z-index: 2; }
+.nca-app .nca-map-control { display: grid; place-items: center; width: 33px; height: 33px; background: #101923ef; border: 1px solid #334352; border-radius: 4px; color: #a4b8c8; }
+.nca-app .nca-map-control:hover { color: var(--nca-amber); border-color: #aa8b63; background: #1c2935; }
+.nca-app .nca-map-control:last-child { margin-top: 5px; }
+.nca-app .nca-map-compass { position: absolute; bottom: 25px; left: 24px; pointer-events: none; text-align: center; color: #768e9f; z-index: 1; }
+.nca-app .nca-map-compass span { color: #a6b7c6; font: 9px Consolas, monospace; }
+.nca-app .nca-map-compass div { font: 36px/1.2 "Segoe UI", Arial, sans-serif; font-weight: 200; color: #7091a7; }
+.nca-app .nca-map-compass small { font: 7px Consolas, monospace; letter-spacing: 2px; }
+.nca-app .nca-map-hint { position: absolute; bottom: 22px; right: 20px; color: #95a7b6; font-size: 9px; padding: 6px 9px; background: #0b121ada; border: 1px solid #2b3c4944; border-radius: 3px; pointer-events: none; z-index: 1; }
+.nca-app .nca-map-status { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; border-top: 1px solid #263543; background: #111b24; flex-shrink: 0; }
+.nca-app .nca-zone-legend { display: flex; flex-wrap: wrap; gap: 6px 11px; }
+.nca-app .nca-legend-item { display: flex; align-items: center; gap: 5px; color: #a1b0bf; font-size: 8px; line-height: 1.3; }
+.nca-app .nca-legend-item i { display: block; width: 6px; height: 6px; border-radius: 1px; opacity: .9; }
+.nca-app .nca-map-meta { display: flex; gap: 9px; align-items: center; flex-shrink: 0; color: #7891a5; font: 8px Consolas, monospace; }
+.nca-app .nca-zoom-value { color: var(--nca-amber); }
+.nca-app .nca-map-caption { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 32px; padding: 7px 16px; border-top: 1px solid #263543; color: #768999; font: 6.5px/1.3 Consolas, monospace; letter-spacing: .6px; background: #0e1720; }
+.nca-app .nca-about-button { font: 9px "Segoe UI", Arial, sans-serif; color: #9bb1c2; white-space: nowrap; padding: 0; }
+.nca-app .nca-about-button:hover { color: var(--nca-amber); }
+.nca-app .nca-tooltip { position: absolute; z-index: 10; width: 264px; pointer-events: none; background: #111c27; border: 1px solid #577183; border-radius: 5px; overflow: hidden; box-shadow: 0 14px 35px #0009; }
+.nca-app .nca-tooltip-image { display: block; width: 100%; height: 104px; object-fit: cover; border-bottom: 1px solid #3a4c5c; }
+.nca-app .nca-tooltip-copy { padding: 12px 14px; }
+.nca-app .nca-eyebrow { display: block; color: var(--nca-amber); font: 8px Consolas, monospace; letter-spacing: 1px; }
+.nca-app .nca-tooltip strong { display: block; font-size: 15px; line-height: 1.3; margin-top: 4px; font-weight: 650; }
+.nca-app .nca-tooltip p { font-size: 10px; line-height: 1.6; color: #c0cbd5; margin-top: 8px; }
+.nca-app .nca-tooltip small { display: block; margin-top: 10px; color: #8fa2b1; font-size: 8px; }
+.nca-app .nca-add-banner { position: absolute; left: 50%; top: 24px; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; z-index: 12; background: #edb96e; color: #191b1b; padding: 9px 13px; border-radius: 4px; font-size: 11px; font-weight: 700; box-shadow: 0 10px 30px #0006; white-space: nowrap; }
+.nca-app .nca-add-banner button { font-size: 22px; padding: 0; line-height: 1; }
+.nca-app .nca-inspector { display: flex; flex-direction: column; min-height: 0; background: #121a23; border-left: 1px solid var(--nca-line); overflow: auto; }
+.nca-app .nca-inspector-hero { position: relative; flex-shrink: 0; width: 100%; min-height: 184px; aspect-ratio: 1.6; overflow: hidden; background: linear-gradient(20deg, #123349, #293647); }
+.nca-app .nca-inspector-hero img { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; }
+.nca-app .nca-inspector-hero::after { content: ""; pointer-events: none; position: absolute; inset: 0; background: linear-gradient(0deg, #0b141dea, transparent 45%, #0b141d66); }
+.nca-app .nca-hero-top { display: flex; justify-content: space-between; gap: 10px; position: absolute; z-index: 1; left: 17px; right: 17px; top: 17px; }
+.nca-app .nca-hero-badge { background: #101921c9; border: 1px solid #7e8fa65c; padding: 4px 7px; border-radius: 3px; color: #e0e7ed; font: 7px Consolas, monospace; letter-spacing: .8px; }
+.nca-app .nca-hero-code { color: #c4d2df; font: 7px Consolas, monospace; letter-spacing: 1px; padding-top: 5px; text-shadow: 0 1px 4px #000; }
+.nca-app .nca-hero-bottom { display: flex; justify-content: space-between; gap: 10px; position: absolute; z-index: 1; left: 17px; right: 17px; bottom: 13px; color: #a6b8ca; font: 6px Consolas, monospace; letter-spacing: .7px; }
+.nca-app .nca-hero-bottom span:first-child { color: #d3dee8; text-transform: uppercase; }
+.nca-app .nca-inspector-content { padding: 21px 20px 25px; }
+.nca-app .nca-inspector-kicker { display: flex; align-items: center; justify-content: space-between; gap: 7px; }
+.nca-app .nca-zone-badge { display: flex; align-items: center; gap: 6px; color: var(--badge-color, var(--nca-amber)); font-size: 9px; }
+.nca-app .nca-zone-badge::before { content: ""; width: 5px; height: 5px; display: inline-block; background: currentColor; border-radius: 1px; }
+.nca-app .nca-pinned { color: #778896; font: 6px Consolas, monospace; letter-spacing: 1px; white-space: nowrap; }
+.nca-app .nca-inspector-title { color: #edf0f3; font-size: 25px; font-weight: 650; line-height: 1.18; margin-top: 12px; letter-spacing: -.6px; overflow-wrap: anywhere; }
+.nca-app .nca-inspector-en { margin-top: 7px; color: #8094a6; font: 9px Consolas, monospace; letter-spacing: 1px; text-transform: uppercase; }
+.nca-app .nca-inspector-summary { color: #bbc7d2; font-size: 11px; line-height: 1.85; margin-top: 18px; }
+.nca-app .nca-district-metrics { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #2c3844; border-bottom: 1px solid #2c3844; margin-top: 20px; padding: 14px 0; }
+.nca-app .nca-district-metrics > div { display: flex; flex-direction: column; gap: 3px; }
+.nca-app .nca-district-metrics > div:last-child { border-left: 1px solid #2c3844; padding-left: 14px; justify-content: center; }
+.nca-app .nca-district-metrics strong { font: 25px/1.2 Consolas, monospace; color: var(--nca-amber); }
+.nca-app .nca-district-metrics .nca-icon { height: 18px; width: 18px; color: #8ba3b7; margin-bottom: 5px; }
+.nca-app .nca-district-metrics span { color: #889cae; font-size: 8px; line-height: 1.5; }
+.nca-app .nca-district-metrics > div:first-child span { font-family: Consolas, monospace; font-size: 7px; letter-spacing: .7px; }
+.nca-app .nca-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 14px; }
+.nca-app .nca-tags span { padding: 4px 6px; color: #9fb2c3; border: 1px solid #304150; background: #19232e; border-radius: 3px; font-size: 8px; }
+.nca-app .nca-details, .nca-app .nca-nearby { margin-top: 25px; }
+.nca-app .nca-details h3, .nca-app .nca-nearby h3 { color: #b6c4d0; font: 8px/1.3 Consolas, monospace; letter-spacing: 1.5px; margin-bottom: 12px; }
+.nca-app .nca-detail-line { display: flex; align-items: baseline; gap: 9px; margin-top: 9px; }
+.nca-app .nca-detail-line i { display: block; width: 4px; height: 4px; flex-shrink: 0; background: #617e97; }
+.nca-app .nca-detail-line p { font-size: 10px; color: #9fb0c0; line-height: 1.75; }
+.nca-app .nca-nearby-location { display: flex; gap: 8px; align-items: center; width: 100%; padding: 9px 0; border-bottom: 1px solid #27333f; text-align: left; color: #b5c5d2; font-size: 10px; }
+.nca-app .nca-nearby-location .nca-icon:first-child { color: #829aac; width: 12px; height: 12px; }
+.nca-app .nca-nearby-location .nca-icon:last-child { margin-left: auto; width: 11px; height: 11px; color: #627a90; }
+.nca-app .nca-nearby-location:hover { color: var(--nca-amber); }
+.nca-app .nca-source { display: inline-flex; max-width: 100%; overflow-wrap: anywhere; margin-top: 18px; color: #7fa6be; font-size: 9px; }
+.nca-app .nca-source::after { content: "↗"; margin-left: 5px; }
+.nca-app .nca-source-note { margin-top: 18px; color: #7f95a8; font-size: 9px; }
+.nca-app .nca-facts { border-top: 1px solid #2c3844; padding: 4px 0; margin: 22px 0 10px; }
+.nca-app .nca-placement-note { display: flex; gap: 8px; margin-top: 16px; padding: 10px; border: 1px solid #3d5668; border-radius: 4px; background: #19304055; color: #9dbacd; }
+.nca-app .nca-placement-note .nca-icon { width: 13px; height: 13px; margin-top: 2px; }
+.nca-app .nca-placement-note p { font-size: 10px; line-height: 1.7; }
+.nca-app .nca-facts > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid #293642; }
+.nca-app .nca-facts dt { color: #7e94a8; font: 7px/1.3 Consolas, monospace; letter-spacing: .8px; }
+.nca-app .nca-facts dd { color: #c6d0db; text-align: right; font-size: 9px; margin: 0; }
+.nca-app .nca-district-link { display: flex; align-items: center; gap: 7px; padding: 6px 0; color: #9dc1d3; font-size: 10px; text-align: left; }
+.nca-app .nca-district-link .nca-icon { width: 13px; height: 13px; }
+.nca-app .nca-district-link:hover { color: var(--nca-amber); }
+.nca-app .nca-inspector-actions { display: flex; flex-direction: column; gap: 8px; padding-top: 20px; margin-top: 20px; border-top: 1px solid #2c3844; }
+.nca-app .nca-edit-actions { display: flex; gap: 8px; }
+.nca-app .nca-edit-actions .nca-secondary { flex: 1; }
+.nca-app .nca-delete-button { color: #d58e95; border-color: #553b45; }
+.nca-app .nca-delete-button:hover { color: #ffacb4; background: #4b2632; }
+.nca-app .nca-inspector-footer { display: flex; justify-content: space-between; gap: 9px; padding: 13px 20px; margin-top: auto; border-top: 1px solid #293440; color: #647b8e; font: 7px/1.2 Consolas, monospace; letter-spacing: 1px; }
+.nca-app .nca-inspector-empty { padding: 30px; color: var(--nca-muted); }
+.nca-app .nca-mobile-nav { display: none; }
+.nca-app .nca-live-region { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.nca-app .nca-info-dialog { position: absolute; z-index: 30; inset: 0; display: flex; align-items: center; justify-content: center; padding: 30px; background: #060c14d9; backdrop-filter: blur(8px); }
+.nca-app .nca-dialog-card { max-width: 530px; width: 100%; max-height: 100%; overflow: auto; border: 1px solid #4f626f; background: #141e28; border-radius: 7px; padding: 24px; box-shadow: 0 20px 60px #0009; }
+.nca-app .nca-dialog-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #3a4957; padding-bottom: 15px; }
+.nca-app .nca-dialog-header h2 { font-size: 23px; color: #e4eaf0; }
+.nca-app .nca-dialog-close { font-size: 26px; line-height: 1; color: #a5bacb; }
+.nca-app .nca-dialog-content { padding: 20px 0; }
+.nca-app .nca-dialog-content h3 { font-size: 15px; margin-bottom: 10px; color: var(--nca-amber); }
+.nca-app .nca-dialog-content h4 { margin-top: 22px; margin-bottom: 10px; color: #a1b7c8; font: 10px Consolas, monospace; letter-spacing: 1px; }
+.nca-app .nca-dialog-content p { font-size: 12px; line-height: 1.8; color: #b6c8d7; margin-top: 8px; }
+.nca-app .nca-dialog-sources { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; }
+.nca-app .nca-dialog-sources .nca-source { margin-top: 0; }
+.nca-app .nca-dialog-done { width: 100%; }
+.night-city-atlas-window .window-content { display: flex; flex-direction: column; min-height: 0; overflow: hidden; padding: 0; background: #0b1016; }
+.night-city-atlas-window .window-content > .nca-app { flex: 1; }
+.night-city-atlas-window .window-header { border-bottom: 1px solid #34404b; background: #121b24; color: #c9d4df; }
+
+@media (max-width: 1190px) {
+  .nca-app .nca-workspace { grid-template-columns: 224px minmax(180px, 1fr) 270px; }
+  .nca-app .nca-era { padding-left: 17px; gap: 6px; }
+  .nca-app .nca-era > span:not(.nca-live-dot) { display: none; }
+  .nca-app .nca-header { padding: 0 18px; gap: 22px; }
+  .nca-app .nca-inspector-content { padding-left: 17px; padding-right: 17px; }
+  .nca-app .nca-map-heading { top: 20px; left: 20px; }
+  .nca-app .nca-map-heading-title { font-size: 21px; }
+  .nca-app .nca-map-meta .nca-coordinate { display: none; }
+  .nca-app .nca-map-hint { font-size: 8px; bottom: 17px; right: 15px; }
+  .nca-app .nca-map-caption { font-size: 6px; }
+}
+@media (max-width: 950px) {
+  .nca-app .nca-workspace { grid-template-columns: 195px minmax(180px, 1fr) 238px; }
+  .nca-app .nca-rail-top { padding: 18px 12px 13px; }
+  .nca-app .nca-category { font-size: 8px; gap: 5px; padding-left: 5px; padding-right: 5px; }
+  .nca-app .nca-search-wrap { padding-left: 8px; gap: 6px; }
+  .nca-app .nca-search { font-size: 10px; }
+  .nca-app .nca-location-row { gap: 7px; padding-left: 5px; padding-right: 5px; }
+  .nca-app .nca-location-number { display: none; }
+  .nca-app .nca-location-copy strong { font-size: 9px; }
+  .nca-app .nca-brand-subtitle { font-size: 6.5px; letter-spacing: .6px; }
+  .nca-app .nca-era { display: none; }
+  .nca-app .nca-inspector-title { font-size: 22px; }
+  .nca-app .nca-inspector-hero { min-height: 150px; }
+  .nca-app .nca-hero-bottom span:last-child { display: none; }
+  .nca-app .nca-map-heading-subtitle { max-width: 150px; font-size: 6px; }
+  .nca-app .nca-map-compass small, .nca-app .nca-map-hint { display: none; }
+  .nca-app .nca-map-status { padding: 9px 10px; }
+  .nca-app .nca-legend-item { font-size: 7px; }
+}
+@media (max-width: 760px) {
+  .nca-app .nca-header { height: 67px; padding: 0 14px; gap: 10px; }
+  .nca-app .nca-brand { gap: 9px; }
+  .nca-app .nca-brand-mark { width: 30px; height: 30px; font-size: 13px; }
+  .nca-app .nca-brand-title { font-size: 20px; }
+  .nca-app .nca-brand-subtitle { font-size: 6px; letter-spacing: .6px; }
+  .nca-app .nca-gm-badge, .nca-app .nca-reader-label { display: none; }
+  .nca-app .nca-header-actions { gap: 5px; }
+  .nca-app .nca-header-actions .nca-icon-button { padding: 7px; }
+  .nca-app .nca-add-button { padding: 7px 9px; }
+  .nca-app .nca-add-button span { display: none; }
+  .nca-app .nca-workspace { display: flex; }
+  .nca-app .nca-rail, .nca-app .nca-map-panel, .nca-app .nca-inspector { display: none; width: 100%; flex: 1; }
+  .nca-app .nca-shell[data-mobile-panel="index"] .nca-rail, .nca-app .nca-shell[data-mobile-panel="map"] .nca-map-panel, .nca-app .nca-shell[data-mobile-panel="detail"] .nca-inspector { display: flex; }
+  .nca-app .nca-mobile-nav { display: flex; flex-shrink: 0; height: 48px; border-top: 1px solid #314252; background: #111b25; padding: 0 6px; }
+  .nca-app .nca-mobile-tab { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; color: #8d9fb0; font-size: 11px; border-top: 2px solid transparent; }
+  .nca-app .nca-mobile-tab.is-active { border-top-color: var(--nca-amber); color: var(--nca-amber); background: #edb96e08; }
+  .nca-app .nca-rail-top { padding: 18px 20px 15px; }
+  .nca-app .nca-categories { grid-template-columns: repeat(3, 1fr); }
+  .nca-app .nca-category { font-size: 10px; min-height: 33px; }
+  .nca-app .nca-category:first-child { grid-column: auto; }
+  .nca-app .nca-location-row { padding: 13px; gap: 12px; }
+  .nca-app .nca-location-copy strong { font-size: 12px; }
+  .nca-app .nca-location-copy small { font-size: 10px; }
+  .nca-app .nca-location-number { display: inline-block; }
+  .nca-app .nca-search { height: 39px; font-size: 12px; }
+  .nca-app .nca-district-filter select { font-size: 11px; height: 34px; }
+  .nca-app .nca-inspector-hero { max-height: 250px; min-height: 170px; }
+  .nca-app .nca-inspector-content { padding: 24px; }
+  .nca-app .nca-inspector-title { font-size: 30px; }
+  .nca-app .nca-inspector-summary { font-size: 13px; }
+  .nca-app .nca-detail-line p { font-size: 12px; }
+  .nca-app .nca-tags span { font-size: 10px; }
+  .nca-app .nca-map-heading-title { font-size: 25px; }
+  .nca-app .nca-map-heading-subtitle { max-width: none; font-size: 7px; }
+  .nca-app .nca-map-compass small { display: block; }
+  .nca-app .nca-map-caption { min-height: 38px; font-size: 6.5px; }
+  .nca-app .nca-map-status { min-height: 48px; }
+  .nca-app .nca-tooltip { width: 235px; }
+  .nca-app .nca-info-dialog { padding: 15px; }
+  .nca-app .nca-add-banner { top: auto; bottom: 24px; font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nca-app *, .nca-app *::before, .nca-app *::after { transition: none !important; animation: none !important; }
+}
+
+/* Foundry windows resize independently of the browser viewport. */
+@container nca (max-width: 1190px) {
+  .nca-app .nca-workspace { grid-template-columns: 224px minmax(180px, 1fr) 270px; }
+  .nca-app .nca-era { padding-left: 17px; gap: 6px; }
+  .nca-app .nca-era > span:not(.nca-live-dot) { display: none; }
+  .nca-app .nca-header { padding: 0 18px; gap: 22px; }
+  .nca-app .nca-inspector-content { padding-left: 17px; padding-right: 17px; }
+  .nca-app .nca-map-heading { top: 20px; left: 20px; }
+  .nca-app .nca-map-heading-title { font-size: 21px; }
+  .nca-app .nca-map-meta .nca-coordinate { display: none; }
+  .nca-app .nca-map-hint { font-size: 8px; bottom: 17px; right: 15px; }
+  .nca-app .nca-map-caption { font-size: 6px; }
+}
+@container nca (max-width: 950px) {
+  .nca-app .nca-workspace { grid-template-columns: 195px minmax(180px, 1fr) 238px; }
+  .nca-app .nca-rail-top { padding: 18px 12px 13px; }
+  .nca-app .nca-category { font-size: 8px; gap: 5px; padding-left: 5px; padding-right: 5px; }
+  .nca-app .nca-search-wrap { padding-left: 8px; gap: 6px; }
+  .nca-app .nca-search { font-size: 10px; }
+  .nca-app .nca-location-row { gap: 7px; padding-left: 5px; padding-right: 5px; }
+  .nca-app .nca-location-number { display: none; }
+  .nca-app .nca-location-copy strong { font-size: 9px; }
+  .nca-app .nca-brand-subtitle { font-size: 6.5px; letter-spacing: .6px; }
+  .nca-app .nca-era { display: none; }
+  .nca-app .nca-inspector-title { font-size: 22px; }
+  .nca-app .nca-inspector-hero { min-height: 150px; }
+  .nca-app .nca-hero-bottom span:last-child { display: none; }
+  .nca-app .nca-map-heading-subtitle { max-width: 150px; font-size: 6px; }
+  .nca-app .nca-map-compass small, .nca-app .nca-map-hint { display: none; }
+  .nca-app .nca-map-status { padding: 9px 10px; }
+  .nca-app .nca-legend-item { font-size: 7px; }
+}
+@container nca (max-width: 760px) {
+  .nca-app .nca-header { height: 67px; padding: 0 14px; gap: 10px; }
+  .nca-app .nca-brand { gap: 9px; }
+  .nca-app .nca-brand-mark { width: 30px; height: 30px; font-size: 13px; }
+  .nca-app .nca-brand-title { font-size: 20px; }
+  .nca-app .nca-brand-subtitle { font-size: 6px; letter-spacing: .6px; }
+  .nca-app .nca-gm-badge, .nca-app .nca-reader-label { display: none; }
+  .nca-app .nca-header-actions { gap: 5px; }
+  .nca-app .nca-header-actions .nca-icon-button { padding: 7px; }
+  .nca-app .nca-add-button { padding: 7px 9px; }
+  .nca-app .nca-add-button span { display: none; }
+  .nca-app .nca-workspace { display: flex; }
+  .nca-app .nca-rail, .nca-app .nca-map-panel, .nca-app .nca-inspector { display: none; width: 100%; flex: 1; }
+  .nca-app .nca-shell[data-mobile-panel="index"] .nca-rail, .nca-app .nca-shell[data-mobile-panel="map"] .nca-map-panel, .nca-app .nca-shell[data-mobile-panel="detail"] .nca-inspector { display: flex; }
+  .nca-app .nca-mobile-nav { display: flex; flex-shrink: 0; height: 48px; border-top: 1px solid #314252; background: #111b25; padding: 0 6px; }
+  .nca-app .nca-mobile-tab { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; color: #8d9fb0; font-size: 11px; border-top: 2px solid transparent; }
+  .nca-app .nca-mobile-tab.is-active { border-top-color: var(--nca-amber); color: var(--nca-amber); background: #edb96e08; }
+  .nca-app .nca-rail-top { padding: 18px 20px 15px; }
+  .nca-app .nca-categories { grid-template-columns: repeat(3, 1fr); }
+  .nca-app .nca-category { font-size: 10px; min-height: 33px; }
+  .nca-app .nca-category:first-child { grid-column: auto; }
+  .nca-app .nca-location-row { padding: 13px; gap: 12px; }
+  .nca-app .nca-location-copy strong { font-size: 12px; }
+  .nca-app .nca-location-copy small { font-size: 10px; }
+  .nca-app .nca-location-number { display: inline-block; }
+  .nca-app .nca-search { height: 39px; font-size: 12px; }
+  .nca-app .nca-district-filter select { font-size: 11px; height: 34px; }
+  .nca-app .nca-inspector-hero { max-height: 250px; min-height: 170px; }
+  .nca-app .nca-inspector-content { padding: 24px; }
+  .nca-app .nca-inspector-title { font-size: 30px; }
+  .nca-app .nca-inspector-summary { font-size: 13px; }
+  .nca-app .nca-detail-line p { font-size: 12px; }
+  .nca-app .nca-tags span { font-size: 10px; }
+  .nca-app .nca-map-heading-title { font-size: 25px; }
+  .nca-app .nca-map-heading-subtitle { max-width: none; font-size: 7px; }
+  .nca-app .nca-map-compass small { display: block; }
+  .nca-app .nca-map-caption { min-height: 38px; font-size: 6.5px; }
+  .nca-app .nca-map-status { min-height: 48px; }
+  .nca-app .nca-tooltip { width: 235px; }
+  .nca-app .nca-info-dialog { padding: 15px; }
+  .nca-app .nca-add-banner { top: auto; bottom: 24px; font-size: 10px; }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Кабуки">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#43c6ba" stop-opacity=".32"/><stop offset="1" stop-color="#43c6ba" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#43c6ba" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#43c6ba" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#43c6ba" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M-5 292V179h37V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="-1" y="187" width="29" height="104" fill="url(#windows)" opacity="0.47"/>
+<path d="M75 292V213h49V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="79" y="221" width="41" height="70" fill="url(#windows)" opacity="0.36"/>
+<path d="M158 292V161h50V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="162" y="169" width="42" height="122" fill="url(#windows)" opacity="0.64"/>
+<path d="M228 292V217h38V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="232" y="225" width="30" height="66" fill="url(#windows)" opacity="0.35"/>
+<path d="M228 217h38" stroke="#43c6ba" opacity=".85" stroke-width="2"/>
+<path d="M286 292V218h57V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="290" y="226" width="49" height="65" fill="url(#windows)" opacity="0.39"/>
+<path d="M366 292V217h43V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="370" y="225" width="35" height="66" fill="url(#windows)" opacity="0.37"/>
+<path d="M438 292V228h44V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="442" y="236" width="36" height="55" fill="url(#windows)" opacity="0.47"/>
+<path d="M438 228h44" stroke="#43c6ba" opacity=".85" stroke-width="2"/>
+<path d="M521 292V159h37V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="525" y="167" width="29" height="124" fill="url(#windows)" opacity="0.63"/>
+<path d="M589 292V169h38V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="593" y="177" width="30" height="114" fill="url(#windows)" opacity="0.57"/>
+<path d="M684 292V179h52V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="688" y="187" width="44" height="104" fill="url(#windows)" opacity="0.47"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#43c6ba" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<path d="M155 329V246h410v83Z" fill="#261c30" stroke="#76536e"/><path d="M121 239Q183 224 212 200h298q45 34 89 39l-10 16H133ZM188 195q50-12 74-39h188q31 28 78 39l-13 15H201Z" fill="#1d2331" stroke="#43c6ba" stroke-width="2"/><path d="M288 330V265h143v65" fill="#080c16"/><rect x="239" y="249" width="20" height="67" fill="#43c6ba"/><rect x="460" y="249" width="20" height="67" fill="#43c6ba"/><path d="M260 206v40m189-40v40M335 164v30m56-30v30" stroke="#d08b8a" stroke-width="5"/>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#43c6ba"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">KABUKI</text>
+<text x="58" y="81" fill="#43c6ba" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR O // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

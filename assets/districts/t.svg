@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Северный Хейвуд">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#d7b877" stop-opacity=".32"/><stop offset="1" stop-color="#d7b877" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#d7b877" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#d7b877" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#d7b877" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M4 292V153h44V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="8" y="161" width="36" height="130" fill="url(#windows)" opacity="0.59"/>
+<path d="M71 292V153h50V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="75" y="161" width="42" height="130" fill="url(#windows)" opacity="0.64"/>
+<path d="M151 292V180h45V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="155" y="188" width="37" height="103" fill="url(#windows)" opacity="0.67"/>
+<path d="M208 292V213h60V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="212" y="221" width="52" height="70" fill="url(#windows)" opacity="0.42"/>
+<path d="M208 213h60" stroke="#d7b877" opacity=".85" stroke-width="2"/>
+<path d="M299 292V170h59V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="303" y="178" width="51" height="113" fill="url(#windows)" opacity="0.38"/>
+<path d="M368 292V221h35V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="372" y="229" width="27" height="62" fill="url(#windows)" opacity="0.33"/>
+<path d="M442 292V230h53V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="446" y="238" width="45" height="53" fill="url(#windows)" opacity="0.70"/>
+<path d="M442 230h53" stroke="#d7b877" opacity=".85" stroke-width="2"/>
+<path d="M531 292V159h49V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="535" y="167" width="41" height="124" fill="url(#windows)" opacity="0.49"/>
+<path d="M605 292V144h58V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="609" y="152" width="50" height="139" fill="url(#windows)" opacity="0.34"/>
+<path d="M657 292V150h43V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="661" y="158" width="35" height="133" fill="url(#windows)" opacity="0.63"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#d7b877" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<rect x="35" y="244" width="163" height="125" fill="#17232e" stroke="#43515c"/><path d="M28 244l88-25 88 25Z" fill="#354150"/><rect x="49" y="257" width="135" height="80" fill="url(#windows)"/>
+<rect x="522" y="224" width="170" height="145" fill="#17232e" stroke="#43515c"/><path d="M515 224l92-25 92 25Z" fill="#354150"/><rect x="536" y="237" width="142" height="100" fill="url(#windows)"/>
+<rect x="531" y="288" width="125" height="23" fill="#090f19" stroke="#d7b877"/><text x="543" y="304" fill="#d7b877" font-size="11" font-family="sans-serif" letter-spacing="3">NIGHT MARKET</text>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#d7b877"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">NORTH HEYWOOD</text>
+<text x="58" y="81" fill="#d7b877" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR T // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

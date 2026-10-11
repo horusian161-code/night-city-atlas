@@ -1,0 +1,13 @@
+<form class="nca-editor-form" autocomplete="off">
+  <div class="form-group"><label>Название</label><input name="name" type="text" value="{{point.name}}" maxlength="160" required></div>
+  <div class="form-group"><label>Название EN</label><input name="nameEn" type="text" value="{{point.nameEn}}" maxlength="160"></div>
+  <div class="form-group"><label>Район</label><select name="districtId">{{#each districts}}<option value="{{id}}" {{#if selected}}selected{{/if}}>{{name}}</option>{{/each}}</select></div>
+  <div class="form-group"><label>Категория</label><select name="category">{{#each categories}}<option value="{{id}}" {{#if selected}}selected{{/if}}>{{name}}</option>{{/each}}</select></div>
+  <div class="form-group"><label>Координаты X / Y</label><div class="form-fields"><input name="x" type="number" value="{{point.x}}" min="0" max="{{maxX}}" step="any" required><input name="y" type="number" value="{{point.y}}" min="0" max="{{maxY}}" step="any" required></div></div>
+  <div class="form-group stacked"><label>Краткая сводка</label><textarea name="summary" rows="5" maxlength="4000">{{point.summary}}</textarea></div>
+  <div class="form-group"><label>Изображение</label><div class="form-fields"><input name="image" type="text" value="{{point.image}}" placeholder="worlds/my-world/images/place.webp"><button class="file-picker" type="button" data-type="image" data-target="image" title="Выбрать изображение"><i class="fas fa-file-import"></i></button></div></div>
+  <div class="form-group"><label>Источник</label><input name="source" type="text" value="{{point.source}}" maxlength="1000"></div>
+  <div class="form-group"><label>UUID журнала</label><input name="journalUUID" type="text" value="{{point.journalUUID}}" placeholder="JournalEntry.… или JournalEntry.…JournalEntryPage.…" maxlength="200"></div>
+  {{#if isCustom}}<div class="form-group"><label>Личная метка GM</label><input type="checkbox" name="hidden" {{checked point.hidden}}></div><p class="notes">Личная метка хранится в этом браузере для этого мира и пользователя. Для переноса используйте полную копию экспорта.</p>{{/if}}
+  <button type="submit"><i class="fas fa-save"></i> Сохранить метку</button>
+</form>

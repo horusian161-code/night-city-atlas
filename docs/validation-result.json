@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "nodeTests": {
+    "total": 37,
+    "passed": 37,
+    "suites": [
+      "model",
+      "data",
+      "mocked-v12-adapter"
+    ]
+  },
+  "browser": {
+    "browser": "133.0.6943.0",
+    "checks": 12,
+    "passed": 12,
+    "results": [
+      {
+        "name": "offline render, all districts/pins, embedded images",
+        "passed": true
+      },
+      {
+        "name": "Russian and English location search selects Afterlife",
+        "passed": true
+      },
+      {
+        "name": "district hover highlights shape and renders image/summary",
+        "passed": true
+      },
+      {
+        "name": "category and district filters apply to map and index",
+        "passed": true
+      },
+      {
+        "name": "keyboard selection, zoom and drag",
+        "passed": true
+      },
+      {
+        "name": "source coverage dialog and accessible dismissal",
+        "passed": true
+      },
+      {
+        "name": "player UI has no mutation/share actions",
+        "passed": true
+      },
+      {
+        "name": "Foundry-root image paths preserved, imported text does not become markup",
+        "passed": true
+      },
+      {
+        "name": "GM actions invoke callbacks and add coordinate identifies district",
+        "passed": true
+      },
+      {
+        "name": "window-width container queries activate compact panels",
+        "passed": true
+      },
+      {
+        "name": "phone-sized preview uses search and detail panels without horizontal overflow",
+        "passed": true
+      },
+      {
+        "name": "no JavaScript runtime exceptions",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "liveFoundry": false
+  },
+  "assets": {
+    "districts": 24,
+    "pins": 156,
+    "originalIllustrations": 24
+  },
+  "liveFoundryV12": {
+    "tested": false,
+    "reason": "Licensed Foundry server core unavailable in build environment."
+  },
+  "visualInspection": {
+    "desktop": true,
+    "hoverCard": true,
+    "compactWindow": true,
+    "phonePreview": true
+  }
+}

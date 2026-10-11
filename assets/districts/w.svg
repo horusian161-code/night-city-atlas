@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Пасифика: парк">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#a58bea" stop-opacity=".32"/><stop offset="1" stop-color="#a58bea" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#a58bea" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#a58bea" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#a58bea" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M-16 292V212h51V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="-12" y="220" width="43" height="71" fill="url(#windows)" opacity="0.53"/>
+<path d="M58 292V176h52V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="62" y="184" width="44" height="107" fill="url(#windows)" opacity="0.67"/>
+<path d="M139 292V178h51V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="143" y="186" width="43" height="105" fill="url(#windows)" opacity="0.36"/>
+<path d="M228 292V222h42V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="232" y="230" width="34" height="61" fill="url(#windows)" opacity="0.53"/>
+<path d="M228 222h42" stroke="#a58bea" opacity=".85" stroke-width="2"/>
+<path d="M297 292V154h40V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="301" y="162" width="32" height="129" fill="url(#windows)" opacity="0.61"/>
+<path d="M368 292V146h55V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="372" y="154" width="47" height="137" fill="url(#windows)" opacity="0.35"/>
+<path d="M462 292V179h54V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="466" y="187" width="46" height="104" fill="url(#windows)" opacity="0.48"/>
+<path d="M462 179h54" stroke="#a58bea" opacity=".85" stroke-width="2"/>
+<path d="M534 292V233h45V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="538" y="241" width="37" height="50" fill="url(#windows)" opacity="0.40"/>
+<path d="M600 292V225h57V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="604" y="233" width="49" height="58" fill="url(#windows)" opacity="0.31"/>
+<path d="M658 292V198h52V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="662" y="206" width="44" height="85" fill="url(#windows)" opacity="0.41"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#a58bea" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<circle cx="277" cy="212" r="111" fill="none" stroke="#718198" stroke-width="5"/><circle cx="277" cy="212" r="92" fill="none" stroke="#a58bea" stroke-width="2"/>
+<path d="M277 212L388.0 212.0" stroke="#496576" stroke-width="2"/><rect x="378.0" y="205.0" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L373.1 267.5" stroke="#496576" stroke-width="2"/><rect x="363.1" y="260.5" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L332.5 308.1" stroke="#496576" stroke-width="2"/><rect x="322.5" y="301.1" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L277.0 323.0" stroke="#496576" stroke-width="2"/><rect x="267.0" y="316.0" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L221.5 308.1" stroke="#496576" stroke-width="2"/><rect x="211.5" y="301.1" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L180.9 267.5" stroke="#496576" stroke-width="2"/><rect x="170.9" y="260.5" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L166.0 212.0" stroke="#496576" stroke-width="2"/><rect x="156.0" y="205.0" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L180.9 156.5" stroke="#496576" stroke-width="2"/><rect x="170.9" y="149.5" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L221.5 115.9" stroke="#496576" stroke-width="2"/><rect x="211.5" y="108.9" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L277.0 101.0" stroke="#496576" stroke-width="2"/><rect x="267.0" y="94.0" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L332.5 115.9" stroke="#496576" stroke-width="2"/><rect x="322.5" y="108.9" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L373.1 156.5" stroke="#496576" stroke-width="2"/><rect x="363.1" y="149.5" width="20" height="14" rx="3" fill="#a58bea"/>
+<path d="M277 212L221 342h112Z" fill="none" stroke="#6a7388" stroke-width="7"/><path d="M415 286q30-132 72-15q30-81 54-23q34-125 63 30" stroke="#a5749e" stroke-width="4" fill="none"/><path d="M414 286h195v56H414Z" fill="#1d2937"/>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#a58bea"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">PACIFICA PLAYGROUND</text>
+<text x="58" y="81" fill="#a58bea" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR W // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

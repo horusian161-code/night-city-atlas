@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Зона восстановления">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#e46154" stop-opacity=".32"/><stop offset="1" stop-color="#e46154" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#e46154" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#e46154" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#e46154" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M-13 292V214h43V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="-9" y="222" width="35" height="69" fill="url(#windows)" opacity="0.48"/>
+<path d="M59 292V216h53V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="63" y="224" width="45" height="67" fill="url(#windows)" opacity="0.62"/>
+<path d="M159 292V147h45V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="163" y="155" width="37" height="136" fill="url(#windows)" opacity="0.59"/>
+<path d="M222 292V143h41V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="226" y="151" width="33" height="140" fill="url(#windows)" opacity="0.56"/>
+<path d="M222 143h41" stroke="#e46154" opacity=".85" stroke-width="2"/>
+<path d="M312 292V179h36V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="316" y="187" width="28" height="104" fill="url(#windows)" opacity="0.51"/>
+<path d="M379 292V220h38V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="383" y="228" width="30" height="63" fill="url(#windows)" opacity="0.53"/>
+<path d="M458 292V157h53V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="462" y="165" width="45" height="126" fill="url(#windows)" opacity="0.49"/>
+<path d="M458 157h53" stroke="#e46154" opacity=".85" stroke-width="2"/>
+<path d="M512 292V165h51V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="516" y="173" width="43" height="118" fill="url(#windows)" opacity="0.44"/>
+<path d="M609 292V234h36V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="613" y="242" width="28" height="49" fill="url(#windows)" opacity="0.61"/>
+<path d="M687 292V199h40V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="691" y="207" width="32" height="84" fill="url(#windows)" opacity="0.54"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#e46154" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<rect x="82" y="273" width="312" height="84" rx="9" fill="#2f454c" stroke="#7aa0aa"/><rect x="93" y="283" width="285" height="33" fill="#102732"/><path d="M128 281v37m43-37v37m43-37v37m43-37v37m43-37v37m43-37v37" stroke="#557e8c" stroke-width="3"/><path d="M95 329H379" stroke="#e46154" stroke-width="4"/><circle cx="148" cy="357" r="16" fill="#070e15" stroke="#65818e"/><circle cx="333" cy="357" r="16" fill="#070e15" stroke="#65818e"/><path d="M470 333V238l90-41 99 42v94Z" fill="#213440" stroke="#587783"/>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#e46154"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">RECLAMATION ZONE</text>
+<text x="58" y="81" fill="#e46154" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR K // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

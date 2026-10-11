@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "locations": [
+    {
+      "id": "custom-example-clinic",
+      "name": "Клиника вашей кампании",
+      "nameEn": "Campaign Clinic",
+      "districtId": "a",
+      "category": "medical",
+      "x": 588,
+      "y": 1029.27,
+      "summary": "Пример пользовательской точки; замените названием и описанием из своей игры.",
+      "source": "Метка кампании",
+      "precision": "approximate",
+      "hidden": false
+    }
+  ],
+  "overrides": [],
+  "disabled": []
+}

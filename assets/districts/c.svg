@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="Оригинальная иллюстрация района Даунтаун">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#07121e"/><stop offset=".62" stop-color="#20273d"/><stop offset="1" stop-color="#361f32"/></linearGradient><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#12202d"/><stop offset="1" stop-color="#060b14"/></linearGradient><linearGradient id="glow"><stop stop-color="#e46154" stop-opacity=".32"/><stop offset="1" stop-color="#e46154" stop-opacity="0"/></linearGradient><pattern id="windows" width="13" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="3" height="5" fill="#e46154" opacity=".45"/></pattern><pattern id="rain" width="32" height="42" patternUnits="userSpaceOnUse"><path d="M4 0l-8 18m23 13-4 8" stroke="#9ab4c9" stroke-opacity=".08"/></pattern></defs>
+<rect width="720" height="400" fill="url(#sky)"/>
+<circle cx="555" cy="140" r="88" fill="#e46154" opacity=".08"/><circle cx="555" cy="140" r="56" fill="none" stroke="#e46154" opacity=".16"/>
+<path d="M0 229L35 219L35 185L54 185L54 229L74 212L82 149L112 149L112 226L139 205L139 177L174 177L174 227L202 214L202 169L231 169L231 225L261 207L261 116L270 100L280 116L280 225L299 224L305 172L319 172L319 209L349 199L359 147L381 147L390 227L420 222L420 180L449 180L449 220L473 224L473 153L504 153L504 223L531 219L543 106L559 106L567 224L609 229L609 177L630 177L639 229L669 224L678 150L697 150L705 230L720 229V315H0Z" fill="#142331"/>
+<path d="M2 292V177h42V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="6" y="185" width="34" height="106" fill="url(#windows)" opacity="0.35"/>
+<path d="M58 292V180h47V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="62" y="188" width="39" height="103" fill="url(#windows)" opacity="0.63"/>
+<path d="M157 292V223h36V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="161" y="231" width="28" height="60" fill="url(#windows)" opacity="0.42"/>
+<path d="M233 292V209h40V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="237" y="217" width="32" height="74" fill="url(#windows)" opacity="0.47"/>
+<path d="M233 209h40" stroke="#e46154" opacity=".85" stroke-width="2"/>
+<path d="M284 292V169h52V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="288" y="177" width="44" height="114" fill="url(#windows)" opacity="0.32"/>
+<path d="M359 292V178h46V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="363" y="186" width="38" height="105" fill="url(#windows)" opacity="0.54"/>
+<path d="M436 292V170h49V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="440" y="178" width="41" height="113" fill="url(#windows)" opacity="0.46"/>
+<path d="M436 170h49" stroke="#e46154" opacity=".85" stroke-width="2"/>
+<path d="M535 292V224h40V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="539" y="232" width="32" height="59" fill="url(#windows)" opacity="0.46"/>
+<path d="M591 292V158h42V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="595" y="166" width="34" height="125" fill="url(#windows)" opacity="0.63"/>
+<path d="M661 292V170h47V292Z" fill="#0b1520" stroke="#243946" stroke-width="1"/>
+<rect x="665" y="178" width="39" height="113" fill="url(#windows)" opacity="0.49"/>
+<rect y="292" width="720" height="108" fill="url(#ground)"/>
+<path d="M320 285L84 400M371 285L634 400M0 343H720M0 372H720" stroke="#314352" opacity=".5"/>
+<path d="M341 301L327 400M365 301L386 400" stroke="#e46154" stroke-width="2" stroke-dasharray="9 14" opacity=".55"/>
+<path d="M276 306V113l30-25h91l28 25v193Z" fill="#101d2a" stroke="#456273"/><path d="M289 119h122M289 139h122M289 158h122M289 177h122M289 197h122M289 216h122M289 235h122M289 254h122" stroke="#e46154" opacity=".5" stroke-width="3"/><path d="M306 88V64h91v24M352 64V33" fill="none" stroke="#577082" stroke-width="4"/>
+<rect width="720" height="400" fill="url(#rain)"/>
+<path d="M25 29h31m-31 0v23M695 29h-31m31 0v23M25 375h31m-31 0v-23M695 375h-31m31 0v-23" stroke="#83939e" opacity=".45" fill="none"/>
+<rect x="39" y="43" width="6" height="24" fill="#e46154"/><text x="59" y="60" fill="#d8e4eb" font-family="sans-serif" font-size="17" font-weight="700" letter-spacing="3">DOWNTOWN</text>
+<text x="58" y="81" fill="#e46154" font-family="sans-serif" font-size="9" letter-spacing="3">SECTOR C // NIGHT CITY 2045</text>
+<text x="43" y="369" fill="#8b9cab" font-family="sans-serif" font-size="8" letter-spacing="2">ORIGINAL ATMOSPHERIC ILLUSTRATION / NOT CANONICAL PHOTOGRAPHY</text>
+</svg>

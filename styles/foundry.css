@@ -1,0 +1,8 @@
+.night-city-atlas-window .window-content {padding:0;background:#080e13;overflow:hidden;display:flex;flex-direction:column;}
+.night-city-atlas-window .window-content>.nca-app {flex:1;min-height:0;height:100%;width:100%;}
+.night-city-atlas-window .window-header {background:#101920;border-bottom:1px solid #34434d;color:#e8eef1;}
+.nca-editor .nca-editor-form textarea {resize:vertical;min-height:100px;}
+.nca-editor .nca-editor-form .notes {font-size:12px;line-height:1.45;}
+.nca-chat-card {border-left:3px solid #d95353;padding:8px 12px;}
+.nca-chat-card>strong {font-size:12px;letter-spacing:.08em;}
+.nca-chat-card button {width:100%;}

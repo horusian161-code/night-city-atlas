@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1016">
+  <title>RED CITY // Найт-Сити 2045</title>
+  <link rel="stylesheet" href="styles/atlas.css">
+  <style>
+    html, body { height: 100%; margin: 0; background: #090e14; }
+    body { display: grid; place-items: center; padding: 26px; box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+    #atlas { width: min(1500px, 100%); height: min(920px, 100%); border: 1px solid #314150; border-radius: 8px; box-shadow: 0 20px 70px #0008; overflow: hidden; }
+    .preview-error { padding: 30px; color: #edb96e; background: #111820; font-size: 15px; }
+    @media (max-width: 760px) { body { padding: 0; } #atlas { height: 100%; width: 100%; border: 0; border-radius: 0; } }
+  </style>
+</head>
+<body>
+  <main id="atlas" class="nca-app" aria-label="Интерактивный атлас Найт-Сити 2045"></main>
+  <script type="module">
+    import { AtlasUI } from "./scripts/atlas-ui.js";
+    const root = document.getElementById("atlas");
+    try {
+      const response = await fetch("./data/atlas.json");
+      if (!response.ok) throw new Error(`Не удалось загрузить атлас: ${response.status}`);
+      const data = await response.json();
+      const atlas = new AtlasUI(root, data, { basePath: ".", isGM: false });
+      window.nightCityAtlasPreview = atlas;
+    } catch (error) {
+      const message = document.createElement("p");
+      message.className = "preview-error";
+      message.textContent = `${error.message}. Откройте предпросмотр через локальный HTTP-сервер.`;
+      root.append(message);
+    }
+  </script>
+</body>
+</html>
