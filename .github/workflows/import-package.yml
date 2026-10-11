@@ -1,0 +1,133 @@
+name: Import module package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-package.yml
+      - red-city-night-city-atlas-v1.0.0.zip
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-package-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check for uploaded package
+        id: package
+        shell: bash
+        run: |
+          if [[ -f red-city-night-city-atlas-v1.0.0.zip ]]; then
+            echo 'present=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'present=false' >> "$GITHUB_OUTPUT"
+            echo 'No root package found; nothing to import.'
+          fi
+
+      - name: Set up Node.js
+        if: steps.package.outputs.present == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate and unpack module
+        if: steps.package.outputs.present == 'true'
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import shutil
+          import stat
+          import zipfile
+
+          root = Path.cwd().resolve()
+          archive = root / 'red-city-night-city-atlas-v1.0.0.zip'
+          if archive.is_symlink():
+              raise SystemExit('Archive must not be a symbolic link')
+          expected_prefix = 'night-city-atlas'
+          max_total_size = 16 * 1024 * 1024
+          max_file_size = 2 * 1024 * 1024
+          allowed_dirs = {'assets', 'data', 'docs', 'scripts', 'styles', 'templates', 'tests', 'tools'}
+          allowed_files = {'module.json', 'package.json', 'README.md', 'LICENSE.txt', 'preview.html', 'preview-offline.html'}
+          entries = []
+          seen = set()
+          with zipfile.ZipFile(archive) as package:
+              infos = package.infolist()
+              if len(infos) > 256 or sum(info.file_size for info in infos) > max_total_size:
+                  raise SystemExit('Package exceeds the import size limit')
+              for info in infos:
+                  name = info.filename
+                  if not name or '\\' in name or '\x00' in name or name.startswith('/'):
+                      raise SystemExit(f'Invalid archive path: {name!r}')
+                  parts = name.rstrip('/').split('/')
+                  if any(part in {'', '.', '..'} for part in parts) or parts[0] != expected_prefix:
+                      raise SystemExit(f'Unexpected archive path: {name!r}')
+                  mode = info.external_attr >> 16
+                  if stat.S_ISLNK(mode) or (stat.S_IFMT(mode) not in {0, stat.S_IFREG, stat.S_IFDIR}):
+                      raise SystemExit(f'Nonregular archive entry: {name!r}')
+                  if len(parts) == 1:
+                      if not info.is_dir():
+                          raise SystemExit('Package root must be a directory')
+                      continue
+                  relative = PurePosixPath(*parts[1:])
+                  if any(part in {'.git', '.github', '__pycache__', 'node_modules'} for part in relative.parts):
+                      raise SystemExit(f'Reserved archive path: {name!r}')
+                  if relative.parts[0] not in allowed_dirs and relative.as_posix() not in allowed_files:
+                      raise SystemExit(f'Unrecognized package path: {name!r}')
+                  if relative.as_posix() in seen:
+                      raise SystemExit(f'Duplicate archive path: {name!r}')
+                  seen.add(relative.as_posix())
+                  destination = root / relative
+                  if not destination.resolve().is_relative_to(root):
+                      raise SystemExit(f'Archive path escapes repository: {name!r}')
+                  for candidate in [destination, *destination.parents]:
+                      if candidate == root:
+                          break
+                      if candidate.is_symlink():
+                          raise SystemExit(f'Destination contains a symbolic link: {name!r}')
+                  if info.file_size > max_file_size:
+                      raise SystemExit(f'Archive file exceeds the size limit: {name!r}')
+                  entries.append((info, destination))
+              if 'module.json' not in seen or 'package.json' not in seen:
+                  raise SystemExit('Missing module or package manifest')
+              invalid = package.testzip()
+              if invalid is not None:
+                  raise SystemExit(f'Archive checksum failed: {invalid!r}')
+              for info, destination in entries:
+                  if info.is_dir():
+                      destination.mkdir(parents=True, exist_ok=True)
+                  else:
+                      destination.parent.mkdir(parents=True, exist_ok=True)
+                      with package.open(info) as source, destination.open('wb') as target:
+                          shutil.copyfileobj(source, target)
+          print(f'Imported {len(entries)} module entries')
+          PY
+
+      - name: Run module tests
+        if: steps.package.outputs.present == 'true'
+        run: npm test
+
+      - name: Commit imported source and package
+        if: steps.package.outputs.present == 'true'
+        shell: bash
+        run: |
+          mkdir -p dist
+          mv red-city-night-city-atlas-v1.0.0.zip dist/red-city-night-city-atlas-v1.0.0.zip
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m 'Import RED CITY module source and installable package'
+            git push origin HEAD:main
+          fi
